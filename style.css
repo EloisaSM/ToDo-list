@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    list-style: none;
+}
+
+.header{
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+}
+
+.container{
+    margin: 0 auto;
+    width: 30%;
+    -webkit-box-shadow: -1px -1px 15px -1px rgba(74,72,74,1);
+    -moz-box-shadow: -1px -1px 15px -1px rgba(74,72,74,1);
+    box-shadow: -1px -1px 15px -1px rgba(74,72,74,1);
+}
+
+#text{
+    width: 100%;
+    height: 50px;
+    padding: 5px 0px 0px 36px;
+    -webkit-box-shadow: -1px -1px 15px -1px rgba(74,72,74,1);
+    -moz-box-shadow: -1px -1px 15px -1px rgba(74,72,74,1);
+    box-shadow: -1px -1px 15px -1px rgba(74,72,74,1);
+}
+
+::placeholder{
+    font-size: 15px;
+}
+
+.appended-itens ul{
+    margin:0;
+    padding:0;
+}
+
+.li-itens{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid gray;
+    padding: 12px 22px 0px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.li-itens:last-child{
+    border-bottom: none;
+}
+
+.li-itens input{
+    margin: 0px 20px 0px 0px;
+    width: 17px;
+    height: 17px;
+}
+
+.button{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    padding: 0;
+    height: 21px;
+    width: 4%;
+}
+
+.strike-btn{
+    background-image: url(./icones/arrow-down.png);
+    position: absolute;
+    top: 125px;
+    left: 681px;
+    width: 1.5%;
+}
+
+.delete-btn{
+    background-image: url(./icones/delete.png);
+    display: none;
+    opacity: 0.5;
+}
+
+.delete-btn:hover{
+    opacity: 1;
+}
+
+.li-itens:hover .delete-btn{
+    display: block;
+}
+
+.btn-container{
+    border-top: 1px solid gray;
+}
+
+.btn-container:hover .clear-completed{
+    text-decoration: underline;
+}
+
+.clear-completed{
+    width: 70px;
+    cursor: pointer;
+    display: none;
+}
+
+.checked{
+    text-decoration: line-through;
+}

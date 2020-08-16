@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,700;1,500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="header">
+        <h5>To do List</h5>
+    </header>
+    <div class="container">
+        <form class="form" onsubmit="sendToDo(event, this)">
+            <input autocomplete="off" type="text" name="txt" id="text" placeholder="Insira um item">
+            <div class='strike-btn button'onclick ="checkAllItens(this)"></div>
+        </form>
+        <div class="appended-itens">
+            <ul>
+            </ul>
+            <div class="btn-container">
+                <button onclick="deleteAll(this)" class="clear-completed button">Clear All</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
