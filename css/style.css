@@ -13,7 +13,6 @@
 
 .container{
     margin: 0 auto;
-    width: 30%;
     -webkit-box-shadow: -1px -1px 15px -1px rgba(74,72,74,1);
     -moz-box-shadow: -1px -1px 15px -1px rgba(74,72,74,1);
     box-shadow: -1px -1px 15px -1px rgba(74,72,74,1);
@@ -61,19 +60,18 @@
     background-repeat: no-repeat;
     padding: 0;
     height: 21px;
-    width: 4%;
 }
 
 .strike-btn{
-    background-image: url(./icones/arrow-down.png);
+    background-image: url(/icones/arrow-down.png);
     position: absolute;
     top: 125px;
     left: 681px;
-    width: 1.5%;
+
 }
 
 .delete-btn{
-    background-image: url(./icones/delete.png);
+    background-image: url(/icones/delete.png);
     display: none;
     opacity: 0.5;
 }
@@ -84,10 +82,6 @@
 
 .li-itens:hover .delete-btn{
     display: block;
-}
-
-.btn-container{
-    border-top: 1px solid gray;
 }
 
 .btn-container:hover .clear-completed{
@@ -103,3 +97,5 @@
 .checked{
     text-decoration: line-through;
 }
+
+

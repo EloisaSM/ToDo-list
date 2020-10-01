@@ -1,0 +1,50 @@
+/* media queries */
+@media screen and (min-width: 0) { 
+    .container{
+        width: auto;
+    }
+
+    .strike-btn{
+        width: 7.5%;
+        top: 124px;
+        left: 13px;
+    }
+
+    .delete-btn{
+        width: 8%;
+    }
+}
+
+/* @media only screen and (min-width: 768px) {
+    .container{ 
+        width: 45%;
+    }
+} */
+
+@media only screen and (min-width: 768px)  { 
+    .container{ 
+        width: 60%;
+    }
+
+    .strike-btn{
+        top: 125px;
+        left: 22%;  
+        width: 3.5%;
+    }
+} 
+
+@media only screen and (min-width: 1024px)  { 
+    .strike-btn{
+        left: 21%;  
+    }
+} 
+
+@media only screen and (min-width: 1200px) {
+    .container{ 
+        width: 45%;
+    }
+
+    .strike-btn{
+    left: 28%;
+    }
+}

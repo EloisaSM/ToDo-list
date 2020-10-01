@@ -4,12 +4,11 @@ function sendToDo(event, form){
     //cancelando o comportamento padrão do formulario
     event.preventDefault();
 
-
     //valor do input(txt)
     const formData = new FormData(form);
     const inputValue = formData.get('txt');
 
-    //limpando o input depois de digitar
+    //limpa o input depois de digitar
     form.reset();
 
     //Não deixa preencher vazio
@@ -69,6 +68,7 @@ function checkList(){
     //se for true vai remover a class checked 
     if(isChecked){
         this.classList.remove('checked');
+        document.querySelector('.clear-completed').style.display = 'none';
 
     //se for false vai adicionar a class checked e rasbicar a palavra
     }else{
@@ -113,11 +113,11 @@ function deleteItemofList(){
     const parentLi = this.parentElement;
 
     //removendo o elemento pai da li
-    parentLi.remove()
+    parentLi.remove();
 }
 
 function deleteAll(clearAll){
-    //pegando todas as li em um array
+    //pegando todas as li 
     const labelElements = document.querySelectorAll('label');
 
     //verifica se os inputs etão checkados e remove os itens apenas checkados
