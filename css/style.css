@@ -53,6 +53,7 @@
     margin: 0px 20px 0px 0px;
     width: 17px;
     height: 17px;
+    cursor: pointer;
 }
 
 .button{
@@ -60,6 +61,7 @@
     background-repeat: no-repeat;
     padding: 0;
     height: 21px;
+    cursor: pointer;
 }
 
 .strike-btn{
@@ -90,7 +92,6 @@
 
 .clear-completed{
     width: 70px;
-    cursor: pointer;
     display: none;
 }
 
