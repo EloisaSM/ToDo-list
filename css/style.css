@@ -21,7 +21,7 @@
 #text{
     width: 100%;
     height: 50px;
-    padding: 5px 0px 0px 36px;
+    padding: 5px 0px 0px 60px;
     -webkit-box-shadow: -1px -1px 15px -1px rgba(74,72,74,1);
     -moz-box-shadow: -1px -1px 15px -1px rgba(74,72,74,1);
     box-shadow: -1px -1px 15px -1px rgba(74,72,74,1);
@@ -63,7 +63,7 @@
 }
 
 .strike-btn{
-    background-image: url(/icones/arrow-down.png);
+    background-image: url(/icones/arrow-down.png) ;
     position: absolute;
     top: 125px;
     left: 681px;
